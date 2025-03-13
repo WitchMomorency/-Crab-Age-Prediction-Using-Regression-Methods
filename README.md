@@ -1,44 +1,46 @@
 # -Crab-Age-Prediction-Using-Regression-Methods
-# Budidaya Kepiting: Peluang Bisnis yang Menjanjikan
+# Crab Farming: A Promising Business Opportunity
 
-**Kepiting** merupakan salah satu komoditas makanan laut yang digemari di berbagai negara di dunia. Permintaan yang tinggi terhadap kepiting menjadikannya sebagai peluang bisnis yang menjanjikan, terutama bagi masyarakat di wilayah pesisir. **Bisnis budidaya kepiting** memiliki sejumlah keunggulan, seperti:
-- **Biaya tenaga kerja yang rendah**
-- **Biaya produksi yang relatif murah**
-- **Tingkat pertumbuhan kepiting yang cepat**
+**Crabs** are one of the most popular seafood commodities enjoyed in various countries worldwide. The high demand for crabs makes it a promising business opportunity, especially for coastal communities. **Crab farming businesses** have several advantages, such as:
+- **Low labor costs**
+- **Relatively affordable production costs**
+- **Fast growth rates of crabs**
 
-Dengan pengelolaan dan perawatan yang baik, **budidaya kepiting** dapat memberikan keuntungan yang lebih besar dibandingkan budidaya udang. Sistem budidaya kepiting dapat dilakukan melalui dua metode utama, yaitu:
+With proper management and care, **crab farming** can generate greater profits compared to shrimp farming. Crab farming can be conducted using two main methods:
 1. **Grow-out farming**
-2. **Sistem penggemukan (fattening system)**
+2. **Fattening system**
 
-## Pentingnya Mengetahui Usia Kepiting
+## The Importance of Determining Crab Age
 
-Mengetahui usia kepiting yang tepat menjadi hal yang penting bagi petani komersial untuk menentukan waktu panen. Setelah mencapai usia tertentu, **pertumbuhan fisik kepiting** cenderung tidak signifikan. Oleh karena itu, pengambilan keputusan waktu panen yang tepat dapat:
-- Menekan biaya
-- Meningkatkan keuntungan
+Determining the precise age of crabs is crucial for commercial farmers to decide the optimal harvest time. Once a certain age is reached, **crab physical growth** tends to plateau. Thus, deciding the right harvest time can:
+- Reduce costs
+- Increase profits
 
-**Analisis data** terkait usia dan karakteristik fisik kepiting menjadi salah satu langkah penting untuk mendukung hal tersebut.
+**Data analysis** related to the age and physical characteristics of crabs is a critical step to support this process.
 
-## Pemaparan Data
+## Data Overview
 
-Dataset yang digunakan dalam analisis ini bertujuan untuk **memperkirakan usia kepiting** berdasarkan atribut fisiknya. Dataset ini menyediakan landasan awal untuk:
-1. **Analisis Data Eksploratif**  
-   Memahami bagaimana berbagai karakteristik fisik kepiting berubah seiring dengan bertambahnya usia.
-2. **Rekayasa Fitur**  
-   Mendefinisikan fitur baru dengan mengombinasikan data yang ada untuk meningkatkan akurasi model.
-3. **Model Regresi**  
-   Membuat model regresi yang dapat memprediksi usia kepiting berdasarkan atribut fisiknya.
+The dataset used in this analysis aims to **estimate crab age** based on its physical attributes. This dataset serves as a foundation for:
+1. **Exploratory Data Analysis**  
+   Understanding how various physical characteristics of crabs change with age.
+2. **Feature Engineering**  
+   Defining new features by combining existing data to improve model accuracy.
+3. **Regression Models**  
+   Building regression models to predict crab age based on physical attributes.
 
-**Dataset ini memberikan peluang besar** untuk mendalami penerapan analisis regresi dan rekayasa fitur, terutama untuk meningkatkan efisiensi dan produktivitas dalam budidaya kepiting secara komersial.
+**This dataset offers significant opportunities** to explore the application of regression analysis and feature engineering, especially to improve efficiency and productivity in commercial crab farming.
 
-## Temuan Eksperimen
+[Dataset Source on Kaggle](https://www.kaggle.com/datasets/sidhus/crab-age-prediction)
 
-- Algoritma yang paling sesuai untuk model ini adalah **Linear Regression**.  
-  Walaupun pada tahap testing performanya relatif buruk dibanding algoritma lainnya, algoritma ini memiliki performa terbaik saat testing.
-- **Random Forest Regression** menunjukkan performa terbaik pada tahap training. Namun, pada tahap testing, algoritma ini mengalami penurunan performa yang mengindikasikan potensi overfitting.
+## Experimental Findings
 
-## Evaluasi dan Peningkatan Model
+- The most suitable algorithm for this model is **Linear Regression**.  
+  Although its performance during testing was relatively poor compared to other algorithms, it delivered the best results during testing.
+- **Random Forest Regression** showed the best performance during training. However, during testing, its performance decreased, indicating a potential overfitting issue.
 
-- **MAE** dan **MSE** tidak dapat dijadikan matriks yang konkrit karena hasil model merupakan normalisasi, bukan tipe data integer.
-- **R² Score** dipilih sebagai acuan evaluasi performa model.
-- Model ini dapat ditingkatkan dengan menerapkan **Feature Engineering** dan **Hyperparameter Tuning** untuk prediksi yang lebih akurat.  
-  Namun, secara dasar, model ini sudah cukup handal dalam melakukan prediksi usia kepiting.
+## Model Evaluation and Improvement
+
+- **MAE** and **MSE** cannot be considered concrete evaluation metrics because the model outputs normalized results instead of the desired integer age type.
+- **R² Score** is used as the evaluation benchmark for model performance.
+- The model can be further enhanced by applying **Feature Engineering** and **Hyperparameter Tuning** for more accurate predictions.  
+  However, fundamentally, this model is already reliable in predicting crab age.
